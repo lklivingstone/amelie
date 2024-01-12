@@ -1,0 +1,30 @@
+.navbar-wrapper {
+    height: 60px;
+    width: 100vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../../assets/navbar-bg.jpg');
+    background-size: cover;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    padding: 0 45px;
+    background-image: radial-gradient(circle at center, #288528, #134313);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.links-list > a {
+    padding: 10px;
+    text-decoration: none;
+    color: #f3f3f3;
+}
