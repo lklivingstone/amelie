@@ -1,14 +1,16 @@
 .container {
+    height: calc(100vh - 60px);
+    width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .player {
-    height: 97vh;
-    width: 97vw;
+    height: 95%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
