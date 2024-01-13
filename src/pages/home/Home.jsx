@@ -5,6 +5,8 @@ import { Navbar } from "../../shared/components/navbar/Navbar";
 import { getLatestMovies, getLatestTVShows } from "../../services/home/home.services";
 
 import "./Home.css";
+import "../../shared/style/customScrollbar/CustomScrollBar.css";
+import { ListContainer } from "../../shared/components/listContainer/ListContainer";
 
 export const Home = () => {
     const [latestMovies, setLatestMovies] = useState([]);
@@ -42,40 +44,8 @@ export const Home = () => {
         <div>
             <Navbar />
             <div className="home-container">
-                <div className="list-container">
-                    <h2>Latest Movies</h2>
-                    <div className="scrollable-container">
-                        {latestMovies?.results?.map((movie) => {
-                            return (
-                                <Link to={`/play/movie/${movie.id}`}>
-                                    <div key={movie.id} className="movie-card">
-                                        <img className="poster" src={'https://image.tmdb.org/t/p/original'+movie.poster_path} alt={movie.original_title} />
-                                    </div>
-                                </Link>
-                            )
-                        })}
-                    </div>
-                </div>
-
-                <div className="list-container">
-                    <h2>Latest Shows</h2>
-                    <div className="scrollable-container">
-                        {latestTVShows?.results?.map((show) => {
-                            return (
-                                <Link to={`/play/tv/${show.id}`}>
-                                    <div key={show.id} className="movie-card">
-                                        <img
-                                        className="poster"
-                                        src={'https://image.tmdb.org/t/p/original'+show.poster_path}
-                                        alt={show.original_title}
-                                        
-                                        />
-                                    </div>
-                                </Link>
-                            )
-                        })}
-                    </div>
-                </div>
+                <ListContainer title="Latest Movies" listItems={latestMovies} />
+                <ListContainer title="Latest TV Shows" listItems={latestTVShows} />
             </div>
         </div>
     )

@@ -1,8 +1,7 @@
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Navigate
+  Route
 } from "react-router-dom"
 
 import { Player } from "./pages/player/Player";

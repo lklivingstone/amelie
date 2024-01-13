@@ -26,7 +26,12 @@ export const Navbar = () => {
     return (
         <div className="navbar-wrapper">
             <div className="links-wrapper">
-                <h1 className="logo">amelie</h1>
+                <h1
+                className="logo"
+                onClick={() => navigate('/')}
+                >
+                    Amelie
+                </h1>
                 <div className="links-list">
                     <a href="/">Home</a>
                     <a href="/movies">Movies</a>

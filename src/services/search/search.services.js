@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const BASE_URL = "https://api.themoviedb.org/3";
-
 const TOKEN= "5e335cccbea7af313ed41b38985aecd9"
 
 const latestAxios= axios.create({

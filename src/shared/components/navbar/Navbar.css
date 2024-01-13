@@ -18,9 +18,11 @@
 
 .logo {
     padding: 0 45px;
-    background-image: radial-gradient(circle at center, #288528, #134313);
-    -webkit-background-clip: text;
+    font-style: italic;
+    background-image: linear-gradient(60deg, #288528, #134313);
+    background-clip: text;
     color: transparent;
+    cursor: pointer;
 }
 
 .links-list > a {
