@@ -2,11 +2,25 @@
     padding: 10px 20px 0 20px;
 }
 
+.list-container > h2 {
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 400;
+}
+
 .scrollable-container {
     width: calc(100vw - 40px);
     display: flex;
     scroll-behavior: smooth;
     overflow-x: auto;
+}
+
+.loading {
+    height: 250px;
+    width: calc(100vw - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .movie-card {

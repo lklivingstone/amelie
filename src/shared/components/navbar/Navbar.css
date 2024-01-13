@@ -19,9 +19,14 @@
 .logo {
     padding: 0 45px;
     font-style: italic;
-    background-image: linear-gradient(60deg, #288528, #134313);
+    background: linear-gradient(-45deg, #b7ffb7, #94ff94);
+    background-size: 200% 200%;
     background-clip: text;
     color: transparent;
+
+    /* background-image: linear-gradient(60deg, #288528, #134313);
+    background-clip: text;
+    color: transparent; */
     cursor: pointer;
 }
 
@@ -33,14 +38,33 @@
 
 .search-wrapper > input {
     padding: 7px;
+    width: 400px;
+    color: #f3f3f3;
     border: none;
     outline: none;
     font-size: 16px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border: 1px solid #fff;
+    border-radius: 3px 0 0 3px;
 }
 
 .search-wrapper > button {
     padding: 7px;
     font-size: 16px;
-    border: none;
-    outline: none;
+    color: #f3f3f3;
+    background: transparent;
+    border: 1px solid #fff;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    &:hover {
+        background: #fff;
+        color:#444;
+      }
+      &:active {
+        box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+      }
+      &:focus {
+        outline: 0;
+      }
 }
