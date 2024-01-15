@@ -12,19 +12,23 @@ export const Player = () => {
     return (
         <>
             <Navbar />
-            <div className="container">
-                <div className="player">
-                    <iframe
-                    width="100%"
-                    height="100%"
-                    src={`https://vidsrc.to/embed/${type}/${id}`}
-                    title="title"
-                    frameBorder="0"
-                    allowFullScreen
-                    ></iframe>
-                </div>
-            </div>
-            <button style={{padding: "20px", margin: "2.5vw"}} onClick={(e) => setToggle(!toggle)}>{toggle ? 'true' : 'false'}</button>
+            {
+                !toggle && (
+
+                    <div className="container">
+                        <div className="player">
+                            <iframe
+                            width="100%"
+                            height="100%"
+                            src={`https://vidsrc.to/embed/${type}/${id}`}
+                            title="title"
+                            frameBorder="0"
+                            allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                )
+            }
             {
               toggle && (
                 
@@ -42,6 +46,7 @@ export const Player = () => {
             </div>
               )
             }
+            <button style={{padding: "20px", margin: "2.5vw"}} onClick={(e) => setToggle(!toggle)}>{!toggle ? 'Player 1' : 'Player 2'}</button>
         </>
     )
 }
