@@ -40,8 +40,8 @@ export const Search = () => {
     return (
         <>
             <Navbar />
-            <ListContainer title="Movies" listItems={movies} />
-            <ListContainer title="TV Shows" listItems={TVShows} />
+            <ListContainer title="Movies" listItems={movies} type="movie"/>
+            <ListContainer title="TV Shows" listItems={TVShows} type="tv"/>
         </>
     )
 }

@@ -64,10 +64,10 @@ export const Movies = () => {
         <>
             <Navbar />
             <div className="movies-container">
-                <ListContainer title='Now Playing Movies' listItems={nowPlayingMovies}/>
-                <ListContainer title='Popular Movies' listItems={popularMovies}/>
-                <ListContainer title='Top Rated Movies' listItems={topRatedMovies}/>
-                <ListContainer title='Upcoming Movies' listItems={upcomingMovies}/>
+                <ListContainer title='Now Playing Movies' listItems={nowPlayingMovies} type="movie"/>
+                <ListContainer title='Popular Movies' listItems={popularMovies} type="movie"/>
+                <ListContainer title='Top Rated Movies' listItems={topRatedMovies} type="movie"/>
+                <ListContainer title='Upcoming Movies' listItems={upcomingMovies} type="movie"/>
             </div>
         </>
     )

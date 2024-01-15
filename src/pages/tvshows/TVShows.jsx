@@ -64,10 +64,10 @@ export const TVShows = () => {
         <>
             <Navbar />
             <div className="movies-container">
-                <ListContainer title='TV Shows Airing Today' listItems={airingTodayTVShows}/>
-                <ListContainer title='TV Shows On The Air' listItems={onTheAirTVShows}/>
-                <ListContainer title='Popular TV Shows' listItems={popularTVShows}/>
-                <ListContainer title='Top Rated TV Shows' listItems={topRatedTVShows}/>
+                <ListContainer title='TV Shows Airing Today' listItems={airingTodayTVShows} type="tv"/>
+                <ListContainer title='TV Shows On The Air' listItems={onTheAirTVShows} type="tv"/>
+                <ListContainer title='Popular TV Shows' listItems={popularTVShows} type="tv"/>
+                <ListContainer title='Top Rated TV Shows' listItems={topRatedTVShows} type="tv"/>
             </div>
         </>
     )

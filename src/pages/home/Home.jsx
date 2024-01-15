@@ -52,8 +52,8 @@ export const Home = () => {
         <div>
             <Navbar />
             <div className="home-container">
-                <ListContainer title="Latest Movies" listItems={latestMovies}/>
-                <ListContainer title="Latest TV Shows" listItems={latestTVShows}/>
+                <ListContainer title="Latest Movies" listItems={latestMovies} type="movie"/>
+                <ListContainer title="Latest TV Shows" listItems={latestTVShows} type="tv"/>
             </div>
         </div>
     )

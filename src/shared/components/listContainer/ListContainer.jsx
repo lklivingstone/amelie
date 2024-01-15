@@ -3,7 +3,7 @@ import { waveform } from 'ldrs'
 
 import "./ListContainer.css";
 
-export const ListContainer = ({title, listItems}) => {
+export const ListContainer = ({title, listItems, type}) => {
     waveform.register();
     return (
         <div className="list-container">
@@ -23,7 +23,7 @@ export const ListContainer = ({title, listItems}) => {
             <div className="scrollable-container">
                 {listItems?.results?.map((item) => {
                     return (
-                        <Link key={item.id} to={`/play/movie/${item.id}`}>
+                        <Link key={item.id} to={`/play/${type}/${item.id}`}>
                             <div className="movie-card">
                                 <img
                                 className="poster"
